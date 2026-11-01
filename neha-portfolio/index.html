@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gavara Neha | Press Start</title>
+<meta name="description" content="Portfolio of Gavara Neha, AI and ML student who builds and deploys browser-native AI apps.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap">
+<style>
+:root{--bg:#fff1c9;--ink:#1b1b1b;--red:#ff6b6b;--mint:#4dd4ac;--blue:#6c8cff;--card:#fffaf0;--pad:clamp(20px,4vw,72px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Space Mono",monospace}
+a{color:var(--ink)}:focus-visible{outline:4px solid var(--blue);outline-offset:3px}
+img{max-width:100%}
+.wrap{max-width:1560px;margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3{font-family:"Press Start 2P",monospace;line-height:1.35;margin:0}
+nav{position:sticky;top:0;z-index:5;background:var(--ink);color:var(--bg)}
+nav .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;align-items:center;padding-top:12px;padding-bottom:12px}
+nav b{font:400 13px "Press Start 2P",monospace;margin-right:auto}
+nav a{color:var(--bg);font-weight:700;text-decoration:none;padding:4px 2px;border-bottom:3px solid transparent}
+nav a:hover{border-color:var(--red)}
+.hero{padding:clamp(36px,6vw,84px) 0}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,80px);align-items:center}
+.hero h1{font-size:clamp(28px,5.2vw,64px);text-transform:uppercase}
+.hero p{max-width:36em;margin:22px 0 28px}
+.me{margin:0;border:4px solid var(--ink);box-shadow:12px 12px 0 var(--red);background:#fff;transform:rotate(1.5deg)}
+.me img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 40%}
+.me figcaption{background:var(--ink);color:var(--bg);font:400 12px "Press Start 2P",monospace;padding:12px 14px}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);border:0;padding:14px 22px;font:700 16px "Space Mono",monospace;box-shadow:6px 6px 0 var(--red);cursor:pointer;text-decoration:none}
+.btn:hover{transform:translate(2px,2px);box-shadow:4px 4px 0 var(--red)}
+.btn.alt{background:var(--card);color:var(--ink);border:3px solid var(--ink);box-shadow:6px 6px 0 var(--mint);padding:11px 20px}
+.row{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.hint{font-weight:700;margin:0}
+#cam{margin-top:24px;max-width:440px;border:4px solid var(--ink);background:var(--card);box-shadow:8px 8px 0 var(--blue);padding:12px}
+#cam video{width:100%;display:block;transform:scaleX(-1);background:#000;min-height:120px}
+#bar{height:14px;width:0;background:var(--mint);transition:width .1s}
+.track{border:3px solid var(--ink);margin:10px 0}
+section{padding:clamp(36px,5vw,72px) 0}
+.lvl{display:inline-block;background:var(--ink);color:var(--bg);font:400 12px "Press Start 2P",monospace;padding:8px 10px;margin-bottom:14px}
+section h2{font-size:clamp(20px,3.4vw,34px);margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.card{background:var(--card);border:3px solid var(--ink);padding:22px;box-shadow:7px 7px 0 var(--ink)}
+.card h3{font-size:15px;margin-bottom:10px}.card p{margin:0 0 10px}
+.c1{box-shadow:7px 7px 0 var(--red)}.c2{box-shadow:7px 7px 0 var(--mint)}.c3{box-shadow:7px 7px 0 var(--blue)}
+.about{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(24px,4vw,64px);align-items:center}
+.about img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 30%;border:4px solid var(--ink);box-shadow:9px 9px 0 var(--mint)}
+.stats{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.stat{background:var(--mint);border:3px solid var(--ink);padding:10px 14px;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;padding:0;list-style:none}
+.chips li{border:2px solid var(--ink);padding:3px 11px;background:#fff;font-size:15px;border-radius:999px}
+.big{font:400 26px "Press Start 2P",monospace;margin:0 0 10px}
+.projects{display:flex;flex-direction:column;gap:clamp(36px,5vw,72px)}
+.proj{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(24px,4vw,72px);align-items:center;background:var(--card);border:4px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:clamp(20px,3vw,44px)}
+.proj.rev .media{order:-1}
+.num{font:400 14px "Press Start 2P",monospace;color:var(--red)}
+.proj h3{font-size:clamp(20px,2.6vw,32px);margin:12px 0 8px}
+.subt{font-size:19px;color:#444;margin:0 0 18px}
+.pts{list-style:none;margin:0 0 22px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 22px}
+.pts li:before{content:"\25B6";color:var(--red);font-size:11px;margin-right:9px}
+.st3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;border-top:3px solid var(--ink);padding:16px 0;margin-bottom:20px}
+.st3 b{display:block;font-size:18px}.st3 span{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#555}
+.media{position:relative;margin:0;border:4px solid var(--ink);background:#fff;box-shadow:8px 8px 0 var(--mint)}
+.media img{display:block;width:100%;height:auto}
+.lv{position:absolute;left:12px;top:12px;background:var(--ink);color:var(--bg);font:400 11px "Press Start 2P",monospace;padding:7px 9px}
+.certs{align-items:start;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.certs a{display:block;border:3px solid var(--ink);background:#fff;box-shadow:5px 5px 0 var(--ink)}
+.certs img{display:block;width:100%;height:auto}
+.sub{font-size:16px;margin:44px 0 18px}
+.pus{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px}
+.pu{background:var(--card);border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink);text-align:center;padding:16px 12px}
+.pu a{text-decoration:none;display:block}
+.pu img{display:block;width:120px;height:120px;object-fit:contain;margin:0 auto 10px}
+.pu b{display:block;font-size:15px;line-height:1.3}.pu span{font-size:13px;color:#555}
+@media (prefers-reduced-motion:no-preference){.pu{transition:transform .15s}.pu:hover{transform:translateY(-6px) rotate(-2deg)}}
+.more{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:22px 0 0;padding:0}
+.more li{border:2px dashed var(--ink);padding:3px 11px;font-size:14px}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;align-items:start}
+.pol{margin:0;background:#fff;border:3px solid var(--ink);padding:12px 12px 6px;box-shadow:7px 7px 0 var(--ink);transform:rotate(-1.5deg)}
+.pol:nth-child(2){transform:rotate(1.2deg)}.pol:nth-child(3){transform:rotate(-.8deg)}
+.pol img{display:block;width:100%;height:auto}.pol figcaption{font-weight:700;padding:10px 2px 6px}
+#secret{background:var(--ink);color:var(--bg);border-top:6px solid var(--red)}
+#secret .card{color:var(--ink)}#secret .lvl{background:var(--red);color:var(--ink)}
+footer{padding:40px 0 60px;border-top:3px solid var(--ink)}
+.tag{font-size:14px;color:#444}
+@media (max-width:900px){.hero .wrap,.about,.proj{grid-template-columns:1fr}.proj.rev .media{order:0}.pts{grid-template-columns:1fr}.me{max-width:420px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,#bar{transition:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>NEHA</b><a href="#about">About</a><a href="#skills">Skills</a><a href="#coding">Coding</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<span class="lvl">PLAYER 1 READY</span>
+<h1>Press start<br>to meet Neha</h1>
+<p>I'm Gavara Neha, a B.Tech AI and ML student who builds AI apps that run in the browser and ship to real users. Scroll through the levels, or try the secret.</p>
+<div class="row"><button class="btn" id="coin" type="button">Insert coin: show your palm</button><button class="btn alt" id="skip" type="button">No camera? Click to unlock</button></div>
+<p class="hint">Hint: allow the camera, hold an open palm up for a second, and a hidden level opens. Nothing is recorded or uploaded.</p>
+<div id="cam" hidden><video id="vid" playsinline muted aria-label="Your camera preview"></video><div class="track" aria-hidden="true"><div id="bar"></div></div><p id="status" role="status" style="margin:0">Starting...</p><button class="btn alt" id="stop" type="button" style="margin-top:12px;padding:10px 16px">Turn camera off</button></div>
+</div>
+<figure class="me"><img src="images/hero.jpg" alt="Neha smiling at her laptop screen, holding up a hand"><figcaption>PLAYER 1: NEHA</figcaption></figure>
+</div></header>
+
+<main>
+<section id="about"><div class="wrap">
+<span class="lvl">LEVEL 1</span><h2>About me</h2>
+<div class="about"><img src="images/about.jpg" alt="Neha smiling at her desk with a laptop">
+<div><div class="grid"><div class="card c1"><p>I'm a penultimate-year student at Aditya University (2024 to 2028) who builds and deploys full-stack AI applications with live public demos.</p><p>I like AI that runs on the device: fast, private, and with no server round trip.</p></div>
+<div class="card c2"><p>I've competed in national hackathons, led a four-person team to Second Runner-Up, and interned on a MERN project at Technical Hub.</p><p>I also lead as an AWS Student Builder Group Leader, and I volunteer with NSS, where I led 3+ outreach initiatives.</p></div></div>
+<div class="stats"><span class="stat">200+ problems solved</span><span class="stat">Top 6 of 700+ teams</span><span class="stat">4 national stages with SignBridge</span><span class="stat">AWS Student Builder Group Leader</span></div></div></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<span class="lvl">LEVEL 2</span><h2>Skills</h2>
+<div class="grid">
+<div class="card c3"><h3>Languages</h3><ul class="chips"><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>C++</li><li>Java</li></ul></div>
+<div class="card c1"><h3>AI and data</h3><ul class="chips"><li>TensorFlow.js</li><li>MediaPipe</li><li>Gemini API</li><li>NLP</li><li>Pandas</li><li>NumPy</li></ul></div>
+<div class="card c2"><h3>Build and ship</h3><ul class="chips"><li>React</li><li>Flask</li><li>Express</li><li>MongoDB</li><li>REST APIs</li><li>Git</li><li>Render</li><li>Netlify</li><li>AWS Amplify</li></ul></div>
+</div></div></section>
+
+<section id="coding"><div class="wrap">
+<span class="lvl">HIGH SCORES</span><h2>Coding scoreboard</h2>
+<div class="grid">
+<div class="card c1"><p class="big">3&#9733;</p><h3>CodeChef</h3><p>Rated 1776. <a href="https://www.codechef.com/users/neha_0628">neha_0628</a></p></div>
+<div class="card c2"><p class="big">Gold</p><h3>HackerRank</h3><p>SQL gold badge, top 10% globally. <a href="https://www.hackerrank.com/profile/Gavara_neha">Gavara_neha</a></p></div>
+<div class="card c3"><p class="big">200+</p><h3>Problems solved</h3><p>Across LeetCode and CodeChef, in data structures and algorithms.</p></div>
+</div>
+<p class="row" style="margin-top:24px"><a class="btn alt" href="https://leetcode.com/u/G_Neha2806/">LeetCode</a><a class="btn alt" href="https://codeforces.com/profile/Milkshake007">Codeforces</a><a class="btn alt" href="https://www.geeksforgeeks.org/profile/gavara6k28">GeeksforGeeks</a></p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<span class="lvl">LEVEL 3</span><h2>Projects</h2>
+<div class="projects">
+<article class="proj"><div class="txt"><span class="num">01</span><h3>SignBridge AI</h3><p class="subt">Real-time AI sign language interpreter</p><ul class="chips"><li>React</li><li>TensorFlow.js</li><li>Gemini AI</li><li>TypeScript</li><li>Computer Vision</li></ul><ul class="pts"><li>Real-time hand tracking</li><li>Speech generation</li><li>Text conversion</li><li>Browser inference</li><li>Accessible UI</li></ul><div class="st3"><div><b>On-device</b><span>Inference</span></div><div><b>Sub-200 ms</b><span>Latency</span></div><div><b>26+</b><span>Gestures</span></div></div><p class="row"><a class="btn alt" href="https://github.com/GavaraNeha/SignBridge-AI">GitHub</a><a class="btn" href="https://gleeful-trifle-007b00.netlify.app/">Live demo</a></p></div><figure class="media c1"><span class="lv">EXPERT</span><img src="images/signbridge.jpg" alt="Screenshot of SignBridge AI" loading="lazy"></figure></article>
+<article class="proj rev"><div class="txt"><span class="num">02</span><h3>Smart Bharat</h3><p class="subt">GenAI civic assistant and digital complaint desk</p><ul class="chips"><li>React</li><li>Gemini API</li><li>Firebase</li><li>Firestore</li><li>Vite</li></ul><ul class="pts"><li>Bilingual English and Hindi support</li><li>AI complaint classification</li><li>Live complaint tracking IDs</li><li>Firestore security rules</li></ul><div class="st3"><div><b>4 hrs</b><span>Built in</span></div><div><b>PromptWars 2026</b><span>Event</span></div><div><b>Deployed</b><span>Status</span></div></div><p class="row"><a class="btn alt" href="https://github.com/GavaraNeha/promptwars-submission">GitHub</a><a class="btn" href="https://promptwars-submission.vercel.app">Live demo</a></p></div><figure class="media c2"><span class="lv">EXPERT</span><img src="images/smartbharat.jpg" alt="Screenshot of Smart Bharat" loading="lazy"></figure></article>
+<article class="proj"><div class="txt"><span class="num">03</span><h3>AtomQuest Goal Portal</h3><p class="subt">Role-based goal setting and performance tracking</p><ul class="chips"><li>React</li><li>JavaScript</li><li>CSS3</li><li>Vercel</li></ul><ul class="pts"><li>Employee, manager and admin roles</li><li>Quarterly check-ins and scoring</li><li>Approval workflow with comments</li><li>Analytics, CSV export and audit trail</li></ul><div class="st3"><div><b>3</b><span>Roles</span></div><div><b>AtomQuest 2026</b><span>Event</span></div><div><b>Deployed</b><span>Status</span></div></div><p class="row"><a class="btn alt" href="https://github.com/GavaraNeha/atomquest-goal-portal">GitHub</a><a class="btn" href="https://atomquest-goal-portal.vercel.app">Live demo</a></p></div><figure class="media c3"><span class="lv">ADVANCED</span><img src="images/atomquest.jpg" alt="Screenshot of AtomQuest Goal Portal" loading="lazy"></figure></article>
+<article class="proj rev"><div class="txt"><span class="num">04</span><h3>TrustAI</h3><p class="subt">Scam job and opportunity checker</p><ul class="chips"><li>Python</li><li>Flask</li><li>NLP</li><li>REST API</li><li>Render</li></ul><ul class="pts"><li>0 to 100% fraud risk score</li><li>10+ heuristic signals</li><li>Per-signal explanations</li><li>Tells you if an offer is worth your time</li></ul><div class="st3"><div><b>10+</b><span>Signals</span></div><div><b>ET-AI 2026</b><span>Semi-finalist</span></div><div><b>Deployed</b><span>Status</span></div></div><p class="row"><a class="btn alt" href="https://github.com/GavaraNeha/TrustAI-Scam-Detector">GitHub</a><a class="btn" href="https://trustai-scam-detector-1.onrender.com/">Live demo</a></p></div><figure class="media c1"><span class="lv">ADVANCED</span><img src="images/trustai.jpg" alt="Screenshot of TrustAI" loading="lazy"></figure></article>
+<article class="proj"><div class="txt"><span class="num">05</span><h3>HerPath</h3><p class="subt">GenAI career re-entry engine for women returning to work</p><ul class="chips"><li>AWS PartyRock</li><li>Claude Sonnet</li><li>GenAI</li></ul><ul class="pts"><li>Career options with fit scores</li><li>30, 60 and 90 day action plan</li><li>Transferable skills identified</li><li>Interview prep and readiness score</li></ul><div class="st3"><div><b>11</b><span>Output sections</span></div><div><b>Women Who Master</b><span>Hackathon</span></div><div><b>AWS</b><span>Platform</span></div></div><p class="row"><a class="btn alt" href="https://github.com/GavaraNeha/HerPath-Return-to-Work-Guide">GitHub</a><a class="btn" href="https://partyrock.aws/u/Shinunogaeva/3XD_bm8pj/HerPath%3A-Return-to-Work-Guide">Live app (AWS sign-in)</a></p></div><figure class="media c2"><span class="lv">ADVANCED</span><img src="images/herpath.jpg" alt="Screenshot of HerPath" loading="lazy"></figure></article>
+<article class="proj rev"><div class="txt"><span class="num">06</span><h3>RiskShield AI</h3><p class="subt">Merchant risk intelligence and investigation console</p><ul class="chips"><li>Python</li><li>Flask</li><li>Gradient Boosting</li><li>Explainability</li></ul><ul class="pts"><li>Priority risk queue</li><li>Feature importance per transaction</li><li>Strict, balanced and frictionless policies</li><li>Audit trail</li></ul><div class="st3"><div><b>91.0%</b><span>Recall</span></div><div><b>95.3%</b><span>Precision</span></div><div><b>Razorpay</b><span>Buildathon</span></div></div><p class="row"><a class="btn alt" href="https://github.com/GavaraNeha/RiskShield_AI">GitHub</a></p></div><figure class="media c3"><span class="lv">EXPERT</span><img src="images/riskshield.jpg" alt="Screenshot of RiskShield AI" loading="lazy"></figure></article>
+<article class="proj"><div class="txt"><span class="num">07</span><h3>JeevSetu</h3><p class="subt">Livestock health surveillance for the field</p><ul class="chips"><li>TypeScript</li><li>AI triage</li><li>Multilingual</li></ul><ul class="pts"><li>Photo-first animal profiles</li><li>AI-assisted symptom triage</li><li>District-wide outbreak heatmap</li><li>English, Hindi and Telugu</li></ul><div class="st3"><div><b>3</b><span>Languages</span></div><div><b>SIH 2026</b><span>Event</span></div><div><b>Offline</b><span>Focus</span></div></div><p class="row"><a class="btn alt" href="https://github.com/GavaraNeha/JeevSetu_SIH">GitHub</a></p></div><figure class="media c1"><span class="lv">ADVANCED</span><img src="images/jeevsetu.jpg" alt="Screenshot of JeevSetu" loading="lazy"></figure></article>
+<article class="proj rev"><div class="txt"><span class="num">08</span><h3>AI Money Mentor</h3><p class="subt">Student financial AI assistant</p><ul class="chips"><li>Python</li><li>Flask</li><li>Chart.js</li><li>Analytics</li></ul><ul class="pts"><li>Spend analytics dashboard</li><li>Personalised guidance</li><li>Goal tracking</li></ul><div class="st3"><div><b>Dashboard</b><span>Surface</span></div><div><b>Chart.js</b><span>Charts</span></div><div><b>Students</b><span>Focus</span></div></div><p class="row"><a class="btn alt" href="https://github.com/GavaraNeha/Ai-money-mentor">GitHub</a><a class="btn" href="https://ai-money-mentor-9gbc.onrender.com/">Live demo</a></p></div><figure class="media c2"><span class="lv">ADVANCED</span><img src="images/moneymentor.jpg" alt="Screenshot of AI Money Mentor" loading="lazy"></figure></article>
+<article class="proj"><div class="txt"><span class="num">09</span><h3>Otari</h3><p class="subt">Cost-aware AI assistant, built in a 36-hour national final</p><ul class="chips"><li>Flask</li><li>JavaScript</li><li>smallest.ai TTS</li></ul><ul class="pts"><li>Budget management</li><li>Prompt-injection detection</li><li>Sensitive-data masking</li><li>Dynamic model routing</li><li>Offline fallback</li></ul><div class="st3"><div><b>Top 6</b><span>Of 700+ teams</span></div><div><b>36 hrs</b><span>Final</span></div><div><b>IIIT Delhi</b><span>HackArena 2.0</span></div></div><p class="row"><a class="btn alt" href="https://github.com/GavaraNeha/otari-cost-aware-assistant">GitHub</a></p></div><figure class="media c3"><span class="lv">EXPERT</span><img src="images/hackarena.jpg" alt="Collage from HackArena 2.0 at IIIT Delhi, where Otari reached the top 6" loading="lazy"></figure></article>
+</div></div></section>
+
+<section id="achievements"><div class="wrap">
+<span class="lvl">TROPHY ROOM</span><h2>Achievements</h2>
+<div class="certs"><a href="images/cert-hackarena.jpg" target="_blank" rel="noopener"><img src="images/cert-hackarena.jpg" alt="Certificate: Top 10 teams, Hackarena 2.0 Zonals" loading="lazy"></a><a href="images/cert-innovatex.jpg" target="_blank" rel="noopener"><img src="images/cert-innovatex.jpg" alt="Certificate: Second Runner-Up, Simply Updify InnovateX 2026" loading="lazy"></a><a href="images/cert-etai.jpg" target="_blank" rel="noopener"><img src="images/cert-etai.jpg" alt="Certificate: Semi-Finalist, ET-AI Hackathon 2026" loading="lazy"></a><a href="images/cert-wwm.jpg" target="_blank" rel="noopener"><img src="images/cert-wwm.jpg" alt="Certificate of Excellence, Women Who Master Hackathon 2026" loading="lazy"></a><a href="images/cert-flowzint.jpg" target="_blank" rel="noopener"><img src="images/cert-flowzint.jpg" alt="Certificate of Participation, FlowZint AI Hackathon 2026" loading="lazy"></a><a href="images/cert-ms.jpg" target="_blank" rel="noopener"><img src="images/cert-ms.jpg" alt="Microsoft Applied Skills: Generate reports with AI research agents" loading="lazy"></a></div>
+<h3 class="sub">Power-ups collected: 7</h3>
+<ul class="pus"><li class="pu"><img src="images/badge-cpp.webp" alt="Cisco Networking Academy badge: C++ Essentials 1" loading="lazy"><b>C++ Essentials 1</b><span>Cisco Networking Academy</span></li><li class="pu"><img src="images/badge-mongodb.webp" alt="MongoDB Skill badge: Relational to Document Model" loading="lazy"><b>Relational to Document Model</b><span>MongoDB Skill</span></li><li class="pu"><a href="https://www.credly.com/badges/7bcf5e00-7658-40c8-9135-2dd89f9a78a2"><img src="images/badge-ibm-ai.webp" alt="IBM SkillsBuild badge: Getting Started with AI" loading="lazy"><b>Getting Started with AI</b><span>IBM SkillsBuild</span></a></li><li class="pu"><a href="https://www.credly.com/badges/fdd7dd98-8edb-4813-bc2b-e9e1860ebfa6/public_url"><img src="images/badge-power.webp" alt="Microsoft Certified badge: Power Platform Fundamentals" loading="lazy"><b>Power Platform Fundamentals</b><span>Microsoft Certified</span></a></li><li class="pu"><img src="images/badge-excel.webp" alt="Microsoft Office Specialist badge: Excel Associate" loading="lazy"><b>Excel Associate</b><span>Microsoft Office Specialist</span></li><li class="pu"><img src="images/badge-python.webp" alt="IBM Developer Skills Network badge: Python for Data Science and AI" loading="lazy"><b>Python for Data Science and AI</b><span>IBM Developer Skills Network</span></li><li class="pu"><img src="images/badge-redhat.webp" alt="Red Hat Academy badge: System Administration II" loading="lazy"><b>System Administration II</b><span>Red Hat Academy</span></li></ul>
+<ul class="more"><li>Databases and SQL for Data Science (IBM)</li><li>Project Management Foundations (Google)</li><li>Digital Marketing and E-commerce (Google)</li><li>Claude with the Anthropic API, MCP and Agentic AI (Anthropic)</li><li>Java Programming (Oracle Academy)</li><li>Database Foundations (Oracle Academy)</li><li>Digital Marketing Certified (HubSpot)</li></ul>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+<span class="lvl">BEHIND THE SCENES</span><h2>Player gallery</h2>
+<div class="gal"><figure class="pol"><img src="images/office.jpg" alt="Neha standing in the office during her internship at Technical Hub" loading="lazy"><figcaption>Intern days at Technical Hub</figcaption></figure><figure class="pol"><img src="images/hackarena.jpg" alt="Collage from HackArena 2.0 at IIIT Delhi: the campus sign, the hall, teammates, and the event wall" loading="lazy"><figcaption>HackArena 2.0, IIIT Delhi</figcaption></figure><figure class="pol"><img src="images/wwm-card.jpg" alt="Guinness World Records record holder card for the Women Who Master Hackathon 2026, zonal round Visakhapatnam" loading="lazy"><figcaption>Women Who Master 2026, Visakhapatnam</figcaption></figure></div>
+</div></section>
+
+<section id="secret" hidden><div class="wrap">
+<span class="lvl">BONUS LEVEL</span><h2>You found it</h2>
+<p>You unlocked the hidden level with your own hand. Here is the boss-fight record.</p>
+<div class="grid">
+<div class="card"><h3>HackArena 2.0</h3><p>Top 6 of 700+ teams at the IIIT Delhi grand finale, after the Hyderabad zonals.</p></div>
+<div class="card"><h3>InnovateX 2026</h3><p>Second Runner-Up as team leader of ProcastiNOTers.</p></div>
+<div class="card"><h3>ET-AI Hackathon</h3><p>Semi-finalist among 54,000+ participants with TrustAI.</p></div>
+</div></div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<h2 style="font-size:20px;margin-bottom:16px">Player 2 wanted</h2>
+<p>Hiring or building something? <a href="mailto:gavaraneha@gmail.com">gavaraneha@gmail.com</a></p>
+<p><a href="https://github.com/GavaraNeha">GitHub</a> | <a href="https://www.linkedin.com/in/gavara-neha-089160333/">LinkedIn</a> | <a href="https://leetcode.com/u/G_Neha2806/">LeetCode</a> | <a href="https://www.hackerrank.com/profile/Gavara_neha">HackerRank</a> | <a href="https://www.codechef.com/users/neha_0628">CodeChef</a> | <a href="https://www.geeksforgeeks.org/profile/gavara6k28">GeeksforGeeks</a> | <a href="https://codeforces.com/profile/Milkshake007">Codeforces</a></p>
+<p class="tag">Hosted on AWS Amplify.</p>
+</div></footer>
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)};
+var CDN='https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/';
+var MODEL='https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task';
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var vid=$('#vid'),bar=$('#bar'),st=$('#status'),stream=null,running=false,hold=0,busy=false;
+function stopCam(){running=false;if(stream){stream.getTracks().forEach(function(t){t.stop()});stream=null}$('#cam').hidden=true;busy=false}
+function unlock(){
+  stopCam();
+  var s=$('#secret');
+  if(s.hidden){s.hidden=false}
+  $('#coin').textContent='Coin inserted';
+  s.scrollIntoView({behavior:reduce?'auto':'smooth'});
+}
+function d(a,b){return Math.hypot(a.x-b.x,a.y-b.y)}
+function isOpen(h){
+  var f=[[8,6],[12,10],[16,14],[20,18]];
+  for(var i=0;i<f.length;i++){if(!(h[f[i][0]].y<h[f[i][1]].y-0.02))return false}
+  return d(h[4],h[0])>d(h[3],h[0]);
+}
+function loop(hl){
+  if(!running)return;
+  if(vid.readyState>=2){
+    var r=hl.detectForVideo(vid,performance.now());
+    var h=r.landmarks&&r.landmarks[0];
+    if(h&&isOpen(h)){hold++;bar.style.width=Math.min(100,hold*5)+'%';if(hold>=20){unlock();return}}
+    else{hold=0;bar.style.width='0'}
+  }
+  requestAnimationFrame(function(){loop(hl)});
+}
+async function start(){
+  if(busy)return;busy=true;hold=0;bar.style.width='0';
+  $('#cam').hidden=false;st.textContent='Loading hand tracking...';
+  try{
+    var v=await import(CDN+'vision_bundle.mjs');
+    var fs=await v.FilesetResolver.forVisionTasks(CDN+'wasm');
+    var hl=await v.HandLandmarker.createFromOptions(fs,{baseOptions:{modelAssetPath:MODEL},runningMode:'VIDEO',numHands:1});
+    stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'}});
+    vid.srcObject=stream;await vid.play();
+    st.textContent='Camera on. Hold an open palm up to the screen.';
+    running=true;loop(hl);
+  }catch(e){
+    stopCam();$('#cam').hidden=false;
+    st.textContent='Camera or hand tracking is not available here. Use the "Click to unlock" button instead.';
+    busy=false;
+  }
+}
+$('#coin').addEventListener('click',start);
+$('#skip').addEventListener('click',unlock);
+$('#stop').addEventListener('click',stopCam);
+})();
+</script>
+</body>
+</html>
